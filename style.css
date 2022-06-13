@@ -103,10 +103,14 @@ hr {
 }
 
 .videos__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
+    width: calc(100% - 250px);
+    margin-top: 120px;
+    margin-left: 250px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 20px 5px;
+    overflow-x: hidden;
 }
 
 .video {

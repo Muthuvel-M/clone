@@ -1,106 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube Clone</title>
 
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
- <header class="header">.</header>
-      <main>
-          <div class="side-bar">.</div>
-          <div class="content">.</div>
-      </main>
-    <header>
- <div class="logo left">
-   <i id="menu" class="material-icons">menu</i>
-   <img src="img/ytlogo.png">
- </div>
- 
- <div class="search center">
-   <form action="">
-     <input type="text" placeholder="Search" />
-     <button><i class="material-icons">search</i></button>
-   </form>
-   <i class="material-icons mic">mic</i>
- </div>
- 
- <div class="icons right">
-   <i class="material-icons">videocam</i>
-   <i class="material-icons">apps</i>
-   <i class="material-icons">notifications</i>
-   <i class="material-icons display-this">account_circle</i>
- </div>
-</header>
-     <div class="nav">
-      <a class="nav-link active">
-        <i class="material-icons">home</i>
-        <span>Home</span>
-      </a>
-  </div>
-  <div class=”side-bar”>
-<div class="nav">
-  <a class="nav-link active">
-     <i class="material-icons">home</i>
-     <span>Home</span>
-  </a>
-  <a class="nav-link">
-     <i class="material-icons">local_fire_department</i>
-     <span>Trending</span>
-  </a>
-  <a class="nav-link">
-     <i class="material-icons">subscriptions</i>
-     <span>Subscriptions</span>
-  </a>
-</div>
-<hr>
-</div>
- <a class="nav-link">
-       <i class="material-icons">library_add_check</i>
-       <span>Library</span>
-    </a>
-    <a class="nav-link">
-       <i class="material-icons">history</i>
-       <span>History</span>
-    </a>
-    <a class="nav-link">
-       <i class="material-icons">play_arrow</i>
-       <span>Your Videos</span>
-    </a>
-    <a class="nav-link">
-       <i class="material-icons">watch_later</i>
-       <span>Watch Later</span>
-    </a>
-    <a class="nav-link">
-       <i class="material-icons">thumb_up</i>
-       <span>Liked Videos</span>
-    </a>
-    <div class="videos">
-    <div class="video">
-       <div class="thumbnail">
-          <img src="https://img.youtube.com/vi/zUwB_imVjmg/maxresdefault.jpg" alt="" />
+
+    <nav class="navbar">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-
-          <div class="details">
-             <div class="author">
-                <img src="https://yt3.ggpht.com/bpzY-S4DYlbTeOpY5hIA7qz_hcbMkgvLAugtwKBGTTImNnWAGudX0y53bo_fJZ0auypxrWkUiw=s88-c-k-c0x00ffffff-no-rj" alt="" />
-             </div>
-             <div class="title">
-                <h3>
-                    Introverts & Content Creation | Sumudu Siriwardana
-                 </h3>
-                 <a href="">
-                        Francesco Ciulla
-                  </a>
-                  <span> 2M Views • 3 Months Ago </span>
-             </div>
-           </div>
-
-         </div>
-   <!-- a video Ends -->
- </div>
-
+        <img src="img/ytlogo.png" class="logo" alt="">
+        <div class="search-box">
+            <input type="text" class="search-bar" placeholder="search">
+            <button class="search-btn"><img src="img/sbtn.png" alt=""></button>
+        </div>
+        <div class="user-options">
+            <img src="img/video.PNG" class="icon" alt="">
+            <img src="img/grid.PNG" class="icon" alt="">
+            <img src="img/bell.PNG" class="icon" alt="">
+            <div class="user-dp">
+                <img src="img/pic.png" alt="">
+            </div>
+        </div>
+    </nav>
+    <div class="side-bar">
+        <a href="#" class="links active"><img src="img/home.PNG" alt="">home</a>
+        <a href="#" class="links"><img src="img/explore.PNG" alt="">explore</a>
+        <a href="#" class="links"><img src="img/subscription.PNG" alt="">subscription</a>
+        <hr class="seperator">
+        <a href="#" class="links"><img src="img/library.PNG" alt="">library</a>
+        <a href="#" class="links"><img src="img/history.PNG" alt="">history</a>
+        <a href="#" class="links"><img src="img/yv.png" alt="">your video</a>
+        <a href="#" class="links"><img src="img/watch-later.PNG" alt="">watch leater</a>
+        <a href="#" class="links"><img src="img/liked video.PNG" alt="">like video</a>
+        <a href="#" class="links"><img src="img/show more.PNG" alt="">show more</a>
+    </div>
+    <div class="filters">
+        <button class="filter-options active">all</button>
+        <button class="filter-options">CSS</button>
+        <button class="filter-options">web development</button>
+        <button class="filter-options">python</button>
+        <button class="filter-options">entertainment</button>
+        <button class="filter-options">marvel</button>
+        <button class="filter-options">javascript</button>
+        <button class="filter-options">artificial intelligence</button>
+        <button class="filter-options">machine learning</button>
+        <button class="filter-options">trending</button>
+    </div>
+    <div class="video-container">
+        <div class="video">
+            <img src="img/img1.jpg" class="thumbnail" alt="">
+            <div class="content">
+                <img src="img/pic.png" class="channel-icon" alt="">
+                <div class="info">
+                    <h4 class="title">Vikram(2022) | Lokesh</h4>
+                    <p class="channel-name">RKMLF</p>
+                </div>
+            </div>
+        </div> 
+        <div class="video">
+            <img src="img/img2.jpg" class="thumbnail" alt="">
+            <div class="content">
+                <img src="img/pic.png" class="channel-icon" alt="">
+                <div class="info">
+                    <h4 class="title">Beast(2022) | Nelson</h4>
+                    <p class="channel-name">Sun pictures</p>
+                </div>
+            </div>
+        </div> 
+        <div class="video">
+            <img src="img/img3.jpg" class="thumbnail" alt="">
+            <div class="content">
+                <img src="img/pic.png" class="channel-icon" alt="">
+                <div class="info">
+                    <h4 class="title">kaithi 2 yet to be star | Lokesh's sambavam start</h4>
+                    <p class="channel-name">LCU</p>
+                </div>
+            </div>
+        </div> 
+        <div class="video">
+            <img src="img/img4.jpg" class="thumbnail" alt="">
+            <div class="content">
+                <img src="img/pic.png" class="channel-icon" alt="">
+                <div class="info">
+                    <h4 class="title">Maanagaram full movie(2017) | Lokesh</h4>
+                    <p class="channel-name">potetial flims</p>
+                </div>
+            </div>
+        </div> 
+        <div class="video">
+            <img src="img/img5.jpg" class="thumbnail" alt="">
+            <div class="content">
+                <img src="img/pic.png" class="channel-icon" alt="">
+                <div class="info">
+                    <h4 class="title">valimai (2022) | Ajith</h4>
+                    <p class="channel-name">Zee studios</p>
+                </div>
+            </div>
+        </div> 
+    </div>
   
 </body>
 </html>

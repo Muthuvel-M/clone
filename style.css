@@ -416,17 +416,4 @@ h1 {
   margin-bottom: 10px;
   color: rgb(3, 3, 3);
 }
-@media (max-width: 768px) {
-    .side-bar {
-      display: none;
-    }
-    .search {
-      display: none;
-    }
-}
-@media (max-width: 768px) {
-    .side-bar {
-      display: none;
-    }
-  }
-  
+

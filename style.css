@@ -146,7 +146,22 @@ body{
     color: rgb(96,96,96);
     font-size: 14px;
 }
-
+@media(max-width: 1440px)
+{
+    .header_Search input{
+        width: 300px;
+    }
+    .sidebar{
+        display: none;
+    }
+    .show-sidebar{
+        display: inline;
+        position: fixed;
+        top: 2rem;
+        height: auto;
+    }
+    
+}
 @media(max-width:425px){
     .header_Search{
         display:none;

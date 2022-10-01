@@ -104,10 +104,23 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+.nav_links li,a{
+    font-family: "Montserrat",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+
 .video{
-    width: 240px;
-    margin-left: 5px;
-    margin-right: 5px;
+    width: 320px;
+    margin-left: -10px;
+    margin-right: -10px;
     margin-bottom: 30px;
 }
 .video_thumnail{
@@ -137,8 +150,8 @@ body{
 }
 .title h3{
     color: rgb(3,3,3);
-    line-height: 18px;
-    font: 10px;
+
+    font: 15px;
     margin-bottom: 6px;
 }
 .title a,span{
